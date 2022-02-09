@@ -1,15 +1,201 @@
-.blog-intro {
-    color: #03120E;
+:root {
+    --dark-color: #131B23;
+    --mid-color: #26413C;
+    --light-color: #8AB0AB;
+    --ff-primary: 'Molengo', sans-serif;
+    --ff-title: 'Lekton', sans-serif;
 }
 
-.h1-title {
+ h1 {
     font-size: 2em;
     font-family: 'Lekton', sans-serif;
-    color: #03120E;
+    color: #131B23;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: 'Lekton', sans-serif;
+    color: #131B23;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: 'Molengo', sans-serif;
+    color: #131B23;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 1em;
+    font-family: 'Lekton', sans-serif;
+    color: #131B23;
+    margin: 0 auto;
 }
 
 p {
     font-family: 'Molengo', sans-serif;
-    font-size: 1.5em;
-    color: #03120E;
+    font-size: 1em;
+    color: #131B23;
+    margin: 0 auto;
 }
+
+.header-container{
+    max-width: 1280px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;}
+
+.main-container{
+    max-width: 1280px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.footer-container{
+    max-width: 1280px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+a:hover {
+    color: #8AB0AB;
+}
+
+
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     margin: 0, auto;
+ }
+
+ .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+ }
+
+ .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+   
+  .wrapper > * {
+    padding: 20px;
+  }
+   
+  .page-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #131B23;
+  }
+
+  .highlight-on-hover:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+  }
+
+  .highlight-on-hover {
+    transition: transform .5s ease-out;
+  }
+
+  .blog-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .blog-thumbnail h4 {
+      font-size: 0.8em;
+      margin-top: 10px;
+  }
+
+  .blog-thumbnail h3 {
+      font-size: 1em;
+      text-align: center;
+    }
+
+/* set width of logo as the minimum of 200px & 50vw */
+#logo-img {
+    vertical-align: middle;
+	width: min(50vw, 300px);
+    padding-right: 50px;
+}
+
+#github-img {
+    width: 80px;
+    transition: transform .5s ease-out;
+}
+
+#github-img:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+#intro-blurb h1 {
+    font-family: "Molengo", sans-serif;
+    font-size: 1.4em;
+    text-align: right;
+}
+
+#footer-blurb p, h3 {
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+
+/* Shaking logo */
+#logo-img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  #test {
+      height: 200px;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  
