@@ -1,8 +1,15 @@
 .blog-intro {
-    color: red;
-    background: gray;
+    color: #03120E;
 }
 
 .h1-title {
-    font-size: 21px;
+    font-size: 2em;
+    font-family: 'Lekton', sans-serif;
+    color: #03120E;
+}
+
+p {
+    font-family: 'Molengo', sans-serif;
+    font-size: 1.5em;
+    color: #03120E;
 }
