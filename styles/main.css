@@ -159,6 +159,16 @@ nav ul li a:focus {
   text-align: center;
 }
 
+.blog-thumbnail img {
+  height: 200px;
+}
+
+.blog-thumbnail a {
+  text-decoration: none;
+  text-align:center;
+}
+
+
 .footer-right-element {
   display: flex;
   flex-direction: row;
@@ -212,9 +222,6 @@ nav ul li a:focus {
   animation-iteration-count: infinite;
 }
 
-#test {
-  height: 200px;
-}
 
 @keyframes shake {
   0% {
