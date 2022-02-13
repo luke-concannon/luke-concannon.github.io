@@ -40,158 +40,128 @@
       <main>
         <div class="blog-page-main">
           <div class="blog-title">
+            <img
+              src="../img/big-fish.png"
+              alt="Small fish | Big Pond"
+              class="blog-title-img"
+            />
             <h1>The Learning Plan of an Aspirational Junior Dev!</h1>
           </div>
-          <div class="tldr">
-            <h1>TLDR</h1>
+          <div class="blog-section">
+            <p>
+              If there has been one single most frustrating theme in my initial
+              CSS learning, it has been aligning elements. Grrrr, just go where
+              I want you to annoying cluster of pixels!
+            </p>
+            <br />
+            <p>
+              Talking about pixels... Among the articles I read when researching
+              <em>positioning</em> there was one that began with making a simple
+              but important concept crystal clear:
+            </p>
+            <blockquote>
+              <p>
+                An important concept to understand first is that every single
+                element on a web page is a block. Literally a rectangle of
+                pixels.
+              </p>
+            </blockquote>
+            <br />
+            <p style="font-size: 0.8em">
+              (TO THE AUTHOR - I promise I will cite you later when I am not
+              chasing my tail pretending to be a web developer...)
+            </p>
+            <br />
+            <p>
+              So all that you commit to that beloved main branch (tech speak,
+              don't worry about it &#128514;) is blocks of pixels. And to make
+              these blocks of pixels go where you want you have several tools at
+              your disposal, but today is all about the property
+              <em>position</em>.
+            </p>
+            <br />
+            <p>There are 5 main values of the position property.</p>
+            <br />
+            <h3 style="text-align: center; padding-top: 10px; font-size: 2em">
+              <mark
+                >position: static | relative | absolute | fixed | sticky</mark
+              >
+            </h3>
+          </div>
+          <div class="blog-section">
+            <h1>What happens when I position: absolute?</h1>
+            <br />
+            <p>
+              An <strong>absolutely</strong> positioned element is removed from
+              the document flow and is positioned automatically to the top-left
+              of its parent element. It no longer is positioned relative to the
+              overall document, but only to its parent element. By removing it
+              from the webpage flow, you are influencing the position of other
+              elements.
+            </p>
+            <br />
+            <p>
+              If you imagine a kid is having heaps of fun in a group of kids,
+              they are all collaborating, playing around with each other, then a
+              helicpter parent comes and lifts the kid from the group to play on
+              there own - this is absolute positioning!
+            </p>
+            <br />
+            <h1>What happens when I position: relative?</h1>
+            <br />
+            <p>
+              A <strong>relatively</strong> positioned element is located
+              relative to itself. It is the badboy of positioning properties, it
+              only cares about itself. "Did you say move 10px left? ok tough
+              guy, but I'm only doing it relative to my original position!"
+            </p>
+            <br />
+            <p>
+              Relative positioning is such a selfish beast that it does not
+              affect the position of other elements! How rude.
+            </p>
+            <br />
+            <h1>What happens when I position: fixed?</h1>
+            <br />
+            <p>
+              Like position: absolute, <strong>fixed</strong> positioned
+              elements are also removed from the normal document flow. The
+              differences are:
+            </p>
             <ul>
               <li>
-                Static - this is the default value, all elements are in order as
-                they appear in the document.
+                They are only relative to the document, not any other parents.
               </li>
-              <li>
-                Relative - the element is positioned relative to its normal
-                position.
-              </li>
-              <li>
-                Absolute - the element is positioned absolutely to its first
-                positioned parent.
-              </li>
-              <li>
-                Fixed - the element is positioned related to the browser window.
-              </li>
-              <li>
-                Sticky - the element is positioned based on the user's scroll
-                position.
-              </li>
+              <li>They are not affected by scrolling.</li>
             </ul>
-            <div class="blog-section">
-              <p>
-                If there has been one single most frustrating theme in my
-                initial CSS learning, it has been aligning elements. Grrrr, just
-                go where I want you to annoying cluster of pixels!
-              </p>
-              <br />
-              <p>
-                Talking about pixels... Among the articles I read when
-                researching <em>positioning</em> there was one that began with
-                making a simple but important concept crystal clear:
-              </p>
-              <blockquote>
-                <p>
-                  An important concept to understand first is that every single
-                  element on a web page is a block. Literally a rectangle of
-                  pixels.
-                </p>
-              </blockquote>
-              <br />
-              <p style="font-size: 0.8em">
-                (TO THE AUTHOR - I promise I will cite you later when I am not
-                chasing my tail pretending to be a web developer...)
-              </p>
-              <br />
-              <p>
-                So all that you commit to that beloved main branch (tech speak,
-                don't worry about it &#128514;) is blocks of pixels. And to make
-                these blocks of pixels go where you want you have several tools
-                at your disposal, but today is all about the property
-                <em>position</em>.
-              </p>
-              <br />
-              <p>There are 5 main values of the position property.</p>
-              <br />
-              <h3 style="text-align: center; padding-top: 10px">
-                <mark
-                  >position: static | relative | absolute | fixed | sticky</mark
-                >
-              </h3>
-
-              <div id="position-vid">
-                <br /><iframe
-                  style="display: block; margin: 0 auto"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/NYEEN4rs4T8"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div class="blog-section">
-              <h1>What happens when I position: absolute?</h1>
-              <br />
-              <p>
-                An <strong>absolutely</strong> positioned element is removed
-                from the document flow and is positioned automatically to the
-                top-left of its parent element. It no longer is positioned
-                relative to the overall document, but only to its parent
-                element. By removing it from the webpage flow, you are
-                influencing the position of other elements.
-              </p>
-              <br />
-              <p>
-                If you imagine a kid is having heaps of fun in a group of kids,
-                they are all collaborating, playing around with each other, then
-                a helicpter parent comes and lifts the kid from the group to
-                play on there own - this is absolute positioning!
-              </p>
-              <br />
-              <h1>What happens when I position: relative?</h1>
-              <br />
-              <p>
-                A <strong>relatively</strong> positioned element is located
-                relative to itself. It is the badboy of positioning properties,
-                it only cares about itself. "Did you say move 10px left? ok
-                tough guy, but I'm only doing it relative to my original
-                position!"
-              </p>
-              <br />
-              <p>
-                Relative positioning is such a selfish beast that it does not
-                affect the position of other elements! How rude.
-              </p>
-              <br />
-              <h1>What happens when I position: fixed?</h1>
-              <br />
-              <p>
-                Like position: absolute, <strong>fixed</strong> positioned
-                elements are also removed from the normal document flow. The
-                differences are:
-              </p>
-              <ul>
-                <li>
-                  They are only relative to the document, not any other parents.
-                </li>
-                <li>They are not affected by scrolling.</li>
-              </ul>
-            </div>
           </div>
         </div>
       </main>
 
-      <footer>
-        <div class="footer-container">
+      <footer class="footer-page">
+        <div class="footer-container-page">
           <div id="intro-blurb">
-            <h1>I'm Luke! I'm learning to build things. See how I go!</h1>
+            <h1 style="color: white">
+              I'm Luke! I'm learning to build things. See how I go!
+            </h1>
           </div>
           <div class="footer-right-element">
             <div id="footer-blurb">
-              <p style="font-size: 0.8em; text-align: right">
+              <p style="font-size: 0.8em; text-align: right; color: white">
                 My father in-law hates blogs to an almost comical degree.
-                <br /><span style="font-size: 1.4em"
+                <br /><span style="font-size: 1.4em; color: white"
                   >This one's for you old man.</span
                 >
               </p>
             </div>
             <div class="github-img">
-              <a href="https://github.com/luke-concannon"
-                ><img
-                  src="../img/github-logo.png"
-                  alt="GitHub | Luke Concannon"
-                  id="github-img"
-              /></a>
+              <span style="margin-left: 10px"
+                ><a href="https://github.com/luke-concannon"
+                  ><img
+                    src="../img/github-logo-white.png"
+                    alt="GitHub | Luke Concannon"
+                    id="github-img" /></a
+              ></span>
             </div>
           </div>
         </div>

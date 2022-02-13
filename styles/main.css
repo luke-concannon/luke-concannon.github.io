@@ -122,28 +122,29 @@ li {
   display: none;
 }
 
-.footer-container {
+.footer-container-homepage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   margin-right: 80px;
   margin-left: 80px;
-  float: none !important;
+}
+
+.footer-page {
+  background-color: #131b23;
+}
+
+.footer-container-page {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0, auto;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 10px;
+
+  margin-right: 80px;
+  margin-left: 80px;
 }
 
 .wrapper {
@@ -216,7 +217,9 @@ li {
 }
 
 .blog-title {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   position: -webkit-sticky;
   top: 10px;
   position: sticky;
@@ -225,13 +228,14 @@ li {
   padding: 15px;
   padding-left: 50px;
   border-radius: 10px;
-  text-align: left;
 }
 
 .blog-title h1 {
   color: white;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Molengo", sans-serif;
+  display: flex;
+  align-items: center;
 }
 
 .section-title h1 {
@@ -244,7 +248,7 @@ li {
   max-width: 60vw;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,6 +288,11 @@ li {
   margin: 5px;
 }
 
+.blog-title-img {
+  width: 7%;
+  padding-right: 20px;
+}
+
 #main-nav {
   list-style-type: none;
   margin-left: 50px;
@@ -319,6 +328,10 @@ li {
   font-family: "Lekton", sans-serif;
   font-size: 1.4em;
   text-align: left;
+}
+
+#position-vid {
+  margin-top: 50px;
 }
 
 /* Shaking logo */
