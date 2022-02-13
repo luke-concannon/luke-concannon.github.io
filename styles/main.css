@@ -480,4 +480,19 @@ li {
     padding: 0px;
     max-width: 85vw;
   }
+
+  .blog-title-img {
+    display: none;
+  }
+
+  .blog-title h1 {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .blog-title {
+    padding: 10px;
+  }
 }
