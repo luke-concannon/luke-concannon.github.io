@@ -259,6 +259,13 @@ li {
   line-height: 150%;
 }
 
+.blog-section h2 {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .tldr {
   display: flex;
   flex-direction: row;
@@ -291,6 +298,23 @@ li {
 .blog-title-img {
   width: 7%;
   padding-right: 20px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #main-nav {
