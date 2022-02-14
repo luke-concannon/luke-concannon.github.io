@@ -61,7 +61,7 @@ nav ul li a:focus {
 }
 
 blockquote {
-  background: #eee;
+  background: rgba(138, 176, 171, 1);
   margin: 1.7em 10px;
   padding: 0.75em 30px;
   border-radius: 20px;
@@ -78,8 +78,10 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+  color: white;
   font-family: "Lekton", sans-serif;
 }
+
 li {
   font-size: 1.2em;
   font-family: "Molengo", sans-serif;
@@ -261,7 +263,8 @@ li {
 
 .blog-section h2 {
   background-color: #eee;
-  padding: 10px;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
   border-radius: 10px;
   text-align: center;
 }
