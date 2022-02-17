@@ -92,7 +92,6 @@ li {
   margin-right: 70px;
   margin-left: 70px;
   padding: 10px;
-  float: none !important;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,8 +102,7 @@ li {
 .homepage-main-container {
   max-width: 80vw;
   max-height: 100vh;
-  margin: 0 auto !important;
-  float: none !important;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -516,5 +514,9 @@ li {
 
   .blog-title {
     padding: 10px;
+  }
+
+  #changeColor {
+    font-size: 0.8em;
   }
 }
