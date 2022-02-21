@@ -142,7 +142,6 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-
   margin-right: 80px;
   margin-left: 80px;
 }
@@ -445,8 +444,11 @@ li {
   }
 
   .footer-container-homepage {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0 auto;
+  }
+
+  .footer-container-page {
+    margin: 0 auto;
   }
 
   .blog-thumbnail {
