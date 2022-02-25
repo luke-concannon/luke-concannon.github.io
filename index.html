@@ -27,12 +27,22 @@
               ><img src="./img/logo.png" alt="not a blog" id="logo-img"
             /></a>
           </div>
+          <span style="font-size: 50px" id="scroll-arrow">&rarr;</span>
           <button id="changeColor">Dont Click!</button>
         </div>
       </header>
 
       <main id="homepage-main">
         <div class="homepage-main-container">
+          <article class="blog-thumbnail highlight-on-hover">
+            <a href="blogs/neuroplasticity.html"
+              ><img src="./img/brain.png" alt="The Malleable Mind!" />
+              <h4 style="color: white">25th Feb 2022</h4>
+              <h3 style="color: white; padding-top: 10px">
+                Neuroplascticity and Growth Mindset
+              </h3></a
+            >
+          </article>
           <article class="blog-thumbnail highlight-on-hover">
             <a href="blogs/javascript-dom.html"
               ><img
@@ -155,6 +165,7 @@
           colors[i];
         document.getElementById("changeable").style.color = colors[i];
         document.getElementById("changeable-right").style.color = colors[i];
+        document.getElementById("scroll-arrow").style.color = colors[i];
         i++;
       });
     </script>
