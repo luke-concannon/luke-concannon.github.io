@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- css -->
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Molengo&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>A Beginners Guide to Solving Problems</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="header-container">
+          <div>
+            <a href="https://luke-concannon.github.io/"
+              ><img src="../img/logo.png" alt="not a blog" id="logo-img"
+            /></a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="blog-page-main">
+          <div class="blog-title">
+            <img
+              src="../img/puzzle.png"
+              alt="Problem Solving"
+              class="blog-title-img"
+            />
+            <h1>A Beginners Guide to Solving Problems</h1>
+          </div>
+          <div class="blog-section">
+            <h2>Solving Problems, Since 1986</h2>
+            <br />
+            <p>
+              Now, I've been solving problems since day dot. Life is full of
+              them. One after the other, they just keep coming at me. So I like
+              to think I'm well practiced in solving problems. But in the quest
+              to become a more proficient finder of solutions, here are some
+              reflections on smashing through some problems in my first few
+              weeks of coding....<br />
+            </p>
+            <br />
+            <h2>Look here Object, give me that damn nested value!</h2>
+            <br />
+            <p>
+              This week I came across a steadfast roadblock in my javascripting.
+              I was trying to dynamically insert into an Object some properties
+              from two other arrays. The complexity came in the fact that the
+              values from one array were to be nested in the object as keys,
+              with the values of those key being nested objects (which were to
+              include the corresponding values from the second array). I managed
+              to loop through the arrays and successfully insert the first
+              arrays values as keys in my object, but when trying to insert the
+              second array's values as a nested object representing the values
+              of the target Objects keys, I came completely unstuck!
+            </p>
+            <br />
+            <h3>TEST - FAIL - TEST - FAIL</h3>
+            <br />
+            <p>
+              I find this to be my default problem solving technique. With
+              console.log() as my trusty sidekick, I can test and fail till the
+              cows come home. They say that failing or making mistakes is one
+              step closer to success. Yeh right, until it isn't! Testing things
+              and failing is the nature of programming, and an important problem
+              solving technique, but unless supported by other approaches, you
+              will eventually meet problems that totally stump you!
+            </p>
+            <br />
+            <h3>GOBBLE UP THAT ONLINE CONTENT!</h3>
+            <br />
+            <p>
+              Having drained the well of my knowledge I then bash my problem
+              into Google, open up a bunch of tabs and gobble up as much
+              learning as I can in as short a time as possible. A tried and true
+              approach to solving problems, and one that we all rely on daily.
+              In this instance, no joy - I must have read 20 different articles
+              on all the which ways I can loop through objects. Then I decided
+              the loop wasnt actually the issue and that instead I'm just not
+              using the correct notation to access the values I need. And herein
+              lise an issue with relying on referencing others' content in
+              trying to solve your problem, you are relying on 2 things - the
+              fact that you know exactly what your problem is; and the fact that
+              someone else has experienced this problem. I half knew what my
+              problem was, and so couldn't really find resolution from others'
+              experiences.
+            </p>
+            <br />
+            <h3>SEEKING HELP FROM A REAL PERSON</h3>
+            <br />
+            <p>
+              The single most effective way to tackle problems is by
+              collaborating with other human beings. It is also sometimes the
+              hardest thing to do. Maybe because we it feels like we're
+              admitting failure in asking for the answer, or maybe it's just
+              because we are ego driven creatures that find it difficult to
+              admit to ourselves we are stuck. Either way, doesn't change the
+              fact that asking a real human person will bring all the joy of any
+              other problem solving technique 10 times over (caveat: most of the
+              time). So this is what I did. I reached out to someone on the
+              slack channel, they hit me up with some code and I laughed in the
+              face of its elegance and simplicity. Truly, I had overcomplicated
+              my problem to a comical degree.
+            </p>
+            <br />
+            <h2>The Scouts Guide to Problem Solving</h2>
+            <br />
+
+            <h3>PSEUDOCODE</h3>
+            <br />
+            <p>
+              Writing pseudocode is a great way to plan your approach. But there
+              is pseduocode and there is <em>pseduocode</em>. Currently the
+              pseduocode I write feels more like a description of what I think I
+              should do rather than a specific list of code I will write -
+              mainly because I don't have enough tools in my JS toolbox to draw
+              on when planning my aproach. This will change with practice and
+              up-skilling.
+            </p>
+            <br />
+            <h3>TRYING SOMETHING</h3>
+            <br />
+            <p>
+              This I am well versed in. It's my default problem solving
+              approach. Have an idea, try it, fail, finesse the code, try it,
+              fail...
+            </p>
+            <br />
+            <h3>RUBBER DUCKY METHOD</h3>
+            <br />
+            <p>
+              Explaining to your rubber ducky the problem, and potential
+              solutions. I get it but am yet to try it. Sometimes I begin to
+              explain puzzles to my girlfriend and I see the value - the rubber
+              ducky (or love partner) has no sense of what you are talking
+              about, so you have to break it down in novel ways to try to get
+              them to understand. In this lies the value.
+            </p>
+            <br />
+            <h3>READING ERROR MESSAGES</h3>
+            <br />
+            <p>
+              Sometimes the error messages are hugely helpful e.g. when you are
+              missing a curly bracket or calling on an undefined variable. Other
+              times they are utterly not helpful, and can be downright abusive,
+              with their red angry color and monospace font. grrrr.
+            </p>
+            <br />
+            <h3>CONSOLE.LOGGING</h3>
+
+            <br />
+            <p>
+              My friend, the console.log - A true companion in finding out what
+              the hell your code is actually asking the computer to do! The
+              console.log is like asking the computer for a little clue to the
+              problem. It is a great way to debug and identify specific pieces
+              of code and their affects.
+            </p>
+            <br />
+            <h3>GOOGLING</h3>
+            <br />
+            <p>
+              The world is a different place because of the internet, and search
+              engines are an essential tool in accessing the information we
+              need. A great learning tool in any industry, but a vital one for
+              programmers - like the bible for Christians, search engines give
+              us access the knowledge that will guide us to heaven!
+            </p>
+            <br />
+            <h3>ASKING YOUR PEERS FOR HELP</h3>
+            <br />
+            <p>
+              Hard to do, but hugely effective. This approach is used after all
+              other approaches have failed. I think I could use it sooner and
+              more regularly, but I also think that a little bit of struggle
+              before doing this is important.
+            </p>
+            <br />
+            <h3>ASKING COACHES FOR HELP</h3>
+            <br />
+            <p>I haven't got to this yet, saving it up for BootCamp!</p>
+            <br />
+            <h3>IMPROVING YOUR PROCESS WITH REFLECTION</h3>
+            <br />
+            <p>
+              Reflection is hugely effective and can be immensely enjoyable. I
+              feel well practiced in building a reflexive practice in my working
+              life - in a previous incarnation as a teacher, reflection lay at
+              the centre of our professional development and I think it should
+              do for all people in all situations. I work with many people in
+              factory settings that are not exposed to reflection, and when they
+              get to experience it they feel stretched and challenged to
+              consider their journey from the perspective opf the 'observer'.
+            </p>
+            <br />
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer-page">
+        <div class="footer-container-page">
+          <div id="intro-blurb">
+            <h1 style="color: white">
+              I'm Luke! I'm learning to build things. See how I go!
+            </h1>
+          </div>
+          <div class="footer-right-element">
+            <div id="footer-blurb">
+              <p style="font-size: 0.8em; text-align: right; color: white">
+                My father in-law hates blogs to an almost comical degree.
+                <br /><span style="font-size: 1.4em; color: white"
+                  >This one's for you old man.</span
+                >
+              </p>
+            </div>
+            <div class="github-img">
+              <span style="margin-left: 10px"
+                ><a href="https://github.com/luke-concannon"
+                  ><img
+                    src="../img/github-logo-white.png"
+                    alt="GitHub | Luke Concannon"
+                    id="github-img" /></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
