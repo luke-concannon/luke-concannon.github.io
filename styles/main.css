@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: "Molengo", sans-serif;
   color: #131b23;
   margin: 0 auto;
@@ -424,7 +424,13 @@ li {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 320px) {
+  #scroll-arrow {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #main-nav li {
     font-size: 1.5em;
   }
