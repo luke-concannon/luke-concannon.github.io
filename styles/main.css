@@ -424,6 +424,21 @@ li {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  #logo-img {
+    display: none;
+  }
+
+  #scroll-arrow {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+
+}
+
 @media only screen and (max-width: 320px) {
   #scroll-arrow {
     display:none;
